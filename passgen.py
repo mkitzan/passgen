@@ -8,20 +8,20 @@ NUM_SEQ = ['1', '2', '3', '4', '5', '6']
 ERROR = 'Flag "%s" appeared without a following argument\nEnter "passgen help" for usage'
 HELP = """'passgen' generates a random diceware password
 
-    Flag    Label       Value           Default     Explaination
-    -------------------------------------------------------------------------------------------------
-    '-w'    wordcount   int             6           number of diceware words to generate
+Flag   Label       Value        Default   Explanation
+-------------------------------------------------------------------------------------------
+'-w'   wordcount   int          6         number of diceware words to generate
 
-    '-s'    symbols     int             0           number of symbols to randomly insert
+'-s'   symbols     int          0         number of symbols to randomly insert
 
-    '-d'    delimeter   char            s           char to place between words
-                                                    use 's' for spaces
-                                                    use 'n' for no delimeter
-    
-    '-l'    list        dw/eff/mix      mix         wordlist to draw from 
-                                                    dw:     standard diceware list
-                                                    eff:    electronic frontier foundation
-                                                    mix:    for each word, either dw or eff is picked"""
+'-d'   delimiter   char         s         char to place between words
+                                          use 's' for spaces
+                                          use 'n' for no delimiter
+
+'-l'   list        dw/eff/mix   mix       wordlist to draw from 
+                                          dw:  standard diceware list
+                                          eff: electronic frontier foundation
+                                          mix: for each word, either dw or eff is picked"""
 
 
 def get_symbol(curs):
